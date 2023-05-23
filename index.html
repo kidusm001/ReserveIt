@@ -89,70 +89,434 @@
       </div>
   </header>
   <main class="main">
-    <section class="top-events">
-      <p>Top selling Events</p>
-      <div class="event-card">
-        <div class = "event-item">
-          <div class = "event-img">
-            <img src =""  alt = "">
-
-            <div class="event-date">Event 3</div>
+    <section class="top-events clearfix" data-carousel>
+      <div class="header-carousel-slider-cont" data-carousel-slider-cont>
+        <h2>Top selling Events</h2>
+        <div class="carousel-slider">
+          <button class="prev-carousel-btn carousel-button" data-carousel-button="prev">
+            <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M14.7071 17.2929C15.0976 17.6834 15.0976 18.3166 14.7071 18.7071C14.3166 19.0976 13.6834 19.0976 13.2929 18.7071L7.29289 12.7071C6.90237 12.3166 6.90237 11.6834 7.29289 11.2929L13.2929 5.29289C13.6834 4.90237 14.3166 4.90237 14.7071 5.29289C15.0976 5.68342 15.0976 6.31658 14.7071 6.70711L9.41421 12L14.7071 17.2929Z" ></path>
+            </svg>
+          </button>
+          <div class="carousel-slide-num">
+            <span class="curr-slide-num" data-curr-slide></span>
+            <span> of </span>
+            <span class="total-slide-num" data-total-slides></span>
           </div>
-          <div class = "event-title">
-            <a href = "#">Event 3</a>
+          <button class="next-carousel-btn carousel-button" data-carousel-button="next">
+            <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M9.29289 6.70711C8.90237 6.31658 8.90237 5.68342 9.29289 5.29289C9.68342 4.90237 10.3166 4.90237 10.7071 5.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L10.7071 18.7071C10.3166 19.0976 9.68342 19.0976 9.29289 18.7071C8.90237 18.3166 8.90237 17.6834 9.29289 17.2929L14.5858 12L9.29289 6.70711Z" ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="carousel-container" data-slides>
+        <div class="carousel-card" data-active>
+          <div class="top-events-container">
+            <a href="#">
+              <div class="event-card">
+                <div class="event-image">
+                  <div class="event-number-container">
+                    <span class="event-number">#1</span>
+                    <div class="num-svg-container">
+                      <svg width="20" height="36" viewBox="0 0 20 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 36H20L13.5149 6.05971C12.6246 2.49838 9.42473 0 5.75379 0H0V32Z" fill="#FF5B49"></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <img src="img\header-bg.jpg" alt="Event Image">
+                </div>
+                <div class="event-details">
+                  <h2 class="event-title">Event Title</h2>
+                  <p class="event-date-time">Date & Time</p>
+                  <p class="event-location">Location</p>
+                  
+                </div>
+                <div class="event-price-container">
+                  <p class="event-price">Price</p>
+                  <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.29289 6.70711C8.90237 6.31658 8.90237 5.68342 9.29289 5.29289C9.68342 4.90237 10.3166 4.90237 10.7071 5.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L10.7071 18.7071C10.3166 19.0976 9.68342 19.0976 9.29289 18.7071C8.90237 18.3166 8.90237 17.6834 9.29289 17.2929L14.5858 12L9.29289 6.70711Z" fill="currentColor"></path>
+                  </svg>
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="event-card">
+                <div class="event-image">
+                  <div class="event-number-container">
+                    <span class="event-number">#2</span>
+                    <div class="num-svg-container">
+                      <svg width="20" height="36" viewBox="0 0 20 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 36H20L13.5149 6.05971C12.6246 2.49838 9.42473 0 5.75379 0H0V32Z" fill="#FF5B49"></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <img src="img\header-bg.jpg" alt="Event Image">
+                </div>
+                <div class="event-details">
+                  <h2 class="event-title">Event Title</h2>
+                  <p class="event-date-time">Date & Time</p>
+                  <p class="event-location">Location</p>
+                  
+                </div>
+                <div class="event-price-container">
+                  <p class="event-price">Price</p>
+                  <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.29289 6.70711C8.90237 6.31658 8.90237 5.68342 9.29289 5.29289C9.68342 4.90237 10.3166 4.90237 10.7071 5.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L10.7071 18.7071C10.3166 19.0976 9.68342 19.0976 9.29289 18.7071C8.90237 18.3166 8.90237 17.6834 9.29289 17.2929L14.5858 12L9.29289 6.70711Z" fill="currentColor"></path>
+                  </svg>
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="event-card">
+                <div class="event-image">
+                  <div class="event-number-container">
+                    <span class="event-number">#3</span>
+                    <div class="num-svg-container">
+                      <svg width="20" height="36" viewBox="0 0 20 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 36H20L13.5149 6.05971C12.6246 2.49838 9.42473 0 5.75379 0H0V32Z" fill="#FF5B49"></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <img src="img\header-bg.jpg" alt="Event Image">
+                </div>
+                <div class="event-details">
+                  <h2 class="event-title">Event Title</h2>
+                  <p class="event-date-time">Date & Time</p>
+                  <p class="event-location">Location</p>
+                  
+                </div>
+                <div class="event-price-container">
+                  <p class="event-price">Price</p>
+                  <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.29289 6.70711C8.90237 6.31658 8.90237 5.68342 9.29289 5.29289C9.68342 4.90237 10.3166 4.90237 10.7071 5.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L10.7071 18.7071C10.3166 19.0976 9.68342 19.0976 9.29289 18.7071C8.90237 18.3166 8.90237 17.6834 9.29289 17.2929L14.5858 12L9.29289 6.70711Z" fill="currentColor"></path>
+                  </svg>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="carousel-card">
+          <div class="top-events-container">
+            <a href="#">
+              <div class="event-card">
+                <div class="event-image">
+                  <div class="event-number-container">
+                    <span class="event-number">#4</span>
+                    <div class="num-svg-container">
+                      <svg width="20" height="36" viewBox="0 0 20 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 36H20L13.5149 6.05971C12.6246 2.49838 9.42473 0 5.75379 0H0V32Z" fill="#FF5B49"></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <img src="img\header-bg.jpg" alt="Event Image">
+                </div>
+                <div class="event-details">
+                  <h2 class="event-title">Event Title</h2>
+                  <p class="event-date-time">Date & Time</p>
+                  <p class="event-location">Location</p>
+                  
+                </div>
+                <div class="event-price-container">
+                  <p class="event-price">Price</p>
+                  <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.29289 6.70711C8.90237 6.31658 8.90237 5.68342 9.29289 5.29289C9.68342 4.90237 10.3166 4.90237 10.7071 5.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L10.7071 18.7071C10.3166 19.0976 9.68342 19.0976 9.29289 18.7071C8.90237 18.3166 8.90237 17.6834 9.29289 17.2929L14.5858 12L9.29289 6.70711Z" fill="currentColor"></path>
+                  </svg>
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="event-card">
+                <div class="event-image">
+                  <div class="event-number-container">
+                    <span class="event-number">#5</span>
+                    <div class="num-svg-container">
+                      <svg width="20" height="36" viewBox="0 0 20 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 36H20L13.5149 6.05971C12.6246 2.49838 9.42473 0 5.75379 0H0V32Z" fill="#FF5B49"></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <img src="img\header-bg.jpg" alt="Event Image">
+                </div>
+                <div class="event-details">
+                  <h2 class="event-title">Event Title</h2>
+                  <p class="event-date-time">Date & Time</p>
+                  <p class="event-location">Location</p>
+                  
+                </div>
+                <div class="event-price-container">
+                  <p class="event-price">Price</p>
+                  <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.29289 6.70711C8.90237 6.31658 8.90237 5.68342 9.29289 5.29289C9.68342 4.90237 10.3166 4.90237 10.7071 5.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L10.7071 18.7071C10.3166 19.0976 9.68342 19.0976 9.29289 18.7071C8.90237 18.3166 8.90237 17.6834 9.29289 17.2929L14.5858 12L9.29289 6.70711Z" fill="currentColor"></path>
+                  </svg>
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="event-card">
+                <div class="event-image">
+                  <div class="event-number-container">
+                    <span class="event-number">#6</span>
+                    <div class="num-svg-container">
+                      <svg width="20" height="36" viewBox="0 0 20 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 36H20L13.5149 6.05971C12.6246 2.49838 9.42473 0 5.75379 0H0V32Z" fill="#FF5B49"></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <img src="img\header-bg.jpg" alt="Event Image">
+                </div>
+                <div class="event-details">
+                  <h2 class="event-title">Event Title</h2>
+                  <p class="event-date-time">Date & Time</p>
+                  <p class="event-location">Location</p>
+                  
+                </div>
+                <div class="event-price-container">
+                  <p class="event-price">Price</p>
+                  <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.29289 6.70711C8.90237 6.31658 8.90237 5.68342 9.29289 5.29289C9.68342 4.90237 10.3166 4.90237 10.7071 5.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L10.7071 18.7071C10.3166 19.0976 9.68342 19.0976 9.29289 18.7071C8.90237 18.3166 8.90237 17.6834 9.29289 17.2929L14.5858 12L9.29289 6.70711Z" fill="currentColor"></path>
+                  </svg>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="carousel-card">
+          <div class="top-events-container">
+            <a href="#">
+              <div class="event-card">
+                <div class="event-image">
+                  <div class="event-number-container">
+                    <span class="event-number">#7</span>
+                    <div class="num-svg-container">
+                      <svg width="20" height="36" viewBox="0 0 20 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 36H20L13.5149 6.05971C12.6246 2.49838 9.42473 0 5.75379 0H0V32Z" fill="#FF5B49"></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <img src="img\header-bg.jpg" alt="Event Image">
+                </div>
+                <div class="event-details">
+                  <h2 class="event-title">Event Title</h2>
+                  <p class="event-date-time">Date & Time</p>
+                  <p class="event-location">Location</p>
+                  
+                </div>
+                <div class="event-price-container">
+                  <p class="event-price">Price</p>
+                  <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.29289 6.70711C8.90237 6.31658 8.90237 5.68342 9.29289 5.29289C9.68342 4.90237 10.3166 4.90237 10.7071 5.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L10.7071 18.7071C10.3166 19.0976 9.68342 19.0976 9.29289 18.7071C8.90237 18.3166 8.90237 17.6834 9.29289 17.2929L14.5858 12L9.29289 6.70711Z" fill="currentColor"></path>
+                  </svg>
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="event-card">
+                <div class="event-image">
+                  <div class="event-number-container">
+                    <span class="event-number">#8</span>
+                    <div class="num-svg-container">
+                      <svg width="20" height="36" viewBox="0 0 20 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 36H20L13.5149 6.05971C12.6246 2.49838 9.42473 0 5.75379 0H0V32Z" fill="#FF5B49"></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <img src="img\header-bg.jpg" alt="Event Image">
+                </div>
+                <div class="event-details">
+                  <h2 class="event-title">Event Title</h2>
+                  <p class="event-date-time">Date & Time</p>
+                  <p class="event-location">Location</p>
+                  
+                </div>
+                <div class="event-price-container">
+                  <p class="event-price">Price</p>
+                  <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.29289 6.70711C8.90237 6.31658 8.90237 5.68342 9.29289 5.29289C9.68342 4.90237 10.3166 4.90237 10.7071 5.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L10.7071 18.7071C10.3166 19.0976 9.68342 19.0976 9.29289 18.7071C8.90237 18.3166 8.90237 17.6834 9.29289 17.2929L14.5858 12L9.29289 6.70711Z" fill="currentColor"></path>
+                  </svg>
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="event-card">
+                <div class="event-image">
+                  <div class="event-number-container">
+                    <span class="event-number">#9</span>
+                    <div class="num-svg-container">
+                      <svg width="20" height="36" viewBox="0 0 20 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 36H20L13.5149 6.05971C12.6246 2.49838 9.42473 0 5.75379 0H0V32Z" fill="#FF5B49"></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <img src="img\header-bg.jpg" alt="Event Image">
+                </div>
+                <div class="event-details">
+                  <h2 class="event-title">Event Title</h2>
+                  <p class="event-date-time">Date & Time</p>
+                  <p class="event-location">Location</p>
+                  
+                </div>
+                <div class="event-price-container">
+                  <p class="event-price">Price</p>
+                  <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.29289 6.70711C8.90237 6.31658 8.90237 5.68342 9.29289 5.29289C9.68342 4.90237 10.3166 4.90237 10.7071 5.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L10.7071 18.7071C10.3166 19.0976 9.68342 19.0976 9.29289 18.7071C8.90237 18.3166 8.90237 17.6834 9.29289 17.2929L14.5858 12L9.29289 6.70711Z" fill="currentColor"></path>
+                  </svg>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
+      
     </section>
-    <section class="event-category">
-      <p>Browse by category</p>
-      <div class="category-cards">
-
+    <section class="event-category" data-carousel>
+      <div class="header-carousel-slider-cont" data-carousel-slider-cont>
+        <h2>Browse Category</h2>
+        <div class="carousel-slider">
+          <button class="prev-carousel-btn carousel-button" data-carousel-button="prev">
+            <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M14.7071 17.2929C15.0976 17.6834 15.0976 18.3166 14.7071 18.7071C14.3166 19.0976 13.6834 19.0976 13.2929 18.7071L7.29289 12.7071C6.90237 12.3166 6.90237 11.6834 7.29289 11.2929L13.2929 5.29289C13.6834 4.90237 14.3166 4.90237 14.7071 5.29289C15.0976 5.68342 15.0976 6.31658 14.7071 6.70711L9.41421 12L14.7071 17.2929Z" ></path>
+            </svg>
+          </button>
+          <div class="carousel-slide-num">
+            <span class="curr-slide-num" data-curr-slide></span>
+            <span> of </span>
+            <span class="total-slide-num" data-total-slides></span>
+          </div>
+          <button class="next-carousel-btn carousel-button" data-carousel-button="next">
+            <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M9.29289 6.70711C8.90237 6.31658 8.90237 5.68342 9.29289 5.29289C9.68342 4.90237 10.3166 4.90237 10.7071 5.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L10.7071 18.7071C10.3166 19.0976 9.68342 19.0976 9.29289 18.7071C8.90237 18.3166 8.90237 17.6834 9.29289 17.2929L14.5858 12L9.29289 6.70711Z" ></path>
+            </svg>
+          </button>
+        </div>
       </div>
+      <div class="carousel-container" data-slides>
+        <div class="category-cards-container" data-active>
+          <a href="#">
+            <div class="category-card">
+              <div class="category-image-container">
+                <img src="img\header-bg-2.jpg" alt="Card Image">
+                <p class="category-name">Category Name</p>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="category-card">
+              <div class="category-image-container">
+                <img src="img\header-bg-2.jpg" alt="Card Image">
+                <p class="category-name">Category Name</p>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="category-card">
+              <div class="category-image-container">
+                <img src="img\header-bg-2.jpg" alt="Card Image">
+                <p class="category-name">Category Name</p>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="category-card">
+              <div class="category-image-container">
+                <img src="img\header-bg-2.jpg" alt="Card Image">
+                <p class="category-name">Category Name</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="category-cards-container">
+          <a href="#">
+            <div class="category-card">
+              <div class="category-image-container">
+                <img src="img\header-bg-2.jpg" alt="Card Image">
+                <p class="category-name">Category Name 2</p>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="category-card">
+              <div class="category-image-container">
+                <img src="img\header-bg-2.jpg" alt="Card Image">
+                <p class="category-name">Category Name 2</p>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="category-card">
+              <div class="category-image-container">
+                <img src="img\header-bg-2.jpg" alt="Card Image">
+                <p class="category-name">Category Name 2</p>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="category-card">
+              <div class="category-image-container">
+                <img src="img\header-bg-2.jpg" alt="Card Image">
+                <p class="category-name">Category Name 2</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="category-cards-container">
+          <a href="#">
+            <div class="category-card">
+              <div class="category-image-container">
+                <img src="img\header-bg-2.jpg" alt="Card Image">
+                <p class="category-name">Category Name 3</p>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="category-card">
+              <div class="category-image-container">
+                <img src="img\header-bg-2.jpg" alt="Card Image">
+                <p class="category-name">Category Name 3</p>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="category-card">
+              <div class="category-image-container">
+                <img src="img\header-bg-2.jpg" alt="Card Image">
+                <p class="category-name">Category Name 3</p>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="category-card">
+              <div class="category-image-container">
+                <img src="img\header-bg-2.jpg" alt="Card Image">
+                <p class="category-name">Category Name 3</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      
     </section>
   </main>
   <footer class="footer">
     <div class="footer-content">
       <div class="logo-social-container">
         <div class="logo">
-          <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="svg47113" viewBox="0 0 1024 768" height="768" width="1024" version="1.1">
-            <metadata id="metadata47119" fill="#FFFFFF">
-              <rdf:rdf fill="#FFFFFF">
-                <cc:work rdf:about="" fill="#FFFFFF">
-                  <dc:format fill="#FFFFFF">image/svg+xml</dc:format>
-                  <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" fill="#FFFFFF"></dc:type>
-                </cc:work>
-              </rdf:rdf>
-            </metadata>
-            <defs id="defs47117"></defs>
-            <linearGradient spreadMethod="pad" y2="30%" x2="-10%" y1="120%" x1="30%" id="3d_gradient2-logo-90fb0c46-440d-4aaa-9b52-95d596eaeb24" fill="#FFFFFF">
-              <stop id="stop47094" stop-opacity="1" stop-color="#ffffff" offset="0%" fill="#FFFFFF"></stop>
-              <stop id="stop47096" stop-opacity="1" stop-color="#000000" offset="100%" fill="#FFFFFF"></stop>
-            </linearGradient>
-            <linearGradient gradientTransform="rotate(-30)" spreadMethod="pad" y2="30%" x2="-10%" y1="120%" x1="30%" id="3d_gradient3-logo-90fb0c46-440d-4aaa-9b52-95d596eaeb24" fill="#FFFFFF">
-              <stop id="stop47099" stop-opacity="1" stop-color="#ffffff" offset="0%" fill="#FFFFFF"></stop>
-              <stop id="stop47101" stop-opacity="1" stop-color="#cccccc" offset="50%" fill="#FFFFFF"></stop>
-              <stop id="stop47103" stop-opacity="1" stop-color="#000000" offset="100%" fill="#FFFFFF"></stop>
-            </linearGradient>
-            <g id="logo-group" fill="#FFFFFF">
-              <image xlink:href="" id="container" x="272" y="144" width="480" height="480" style="display: none;" transform="translate(0 0)" fill="#FFFFFF"></image>
-              <g id="logo-center" transform="translate(0 0)" fill="#FFFFFF">
-                <image xlink:href="" id="icon_container" style="display: none;" x="0" y="0" fill="#FFFFFF"></image>
-                <g id="slogan" style="font-style:normal;font-weight:400;font-size:32px;line-height:1;font-family:Montserrat;font-variant-ligatures:none;text-align:center;text-anchor:middle" transform="translate(0 0)" fill="#FFFFFF"></g>
-                <g id="title" style="font-style:normal;font-weight:700;font-size:72px;line-height:1;font-family:'Brandmark1 Bold';font-variant-ligatures:normal;text-align:center;text-anchor:middle" transform="translate(0 0)" fill="#FFFFFF">
-                  <path id="path47122" style="font-style:normal;font-weight:700;font-size:72px;line-height:1;font-family:'Brandmark1 Bold';font-variant-ligatures:normal;text-align:center;text-anchor:middle" d="m 342.47487,2.952 c 7.272,0 13.176,-5.904 13.176,-13.176 0,-7.272 -5.904,-13.176 -13.176,-13.176 h -3.024 c -1.08,0 -1.872,-0.864 -1.872,-1.872 0,-1.08 0.792,-1.944 1.872,-1.944 h 15.048 V -38.52 h -15.048 c -7.272,0 -13.176,5.976 -13.176,13.248 0,7.272 5.904,13.176 13.176,13.176 h 3.024 c 1.008,0 1.872,0.864 1.872,1.872 0,1.08 -0.864,1.872 -1.872,1.872 h -16.848 V 2.952 Z" stroke-width="0px" stroke-linejoin="miter" stroke-miterlimit="2" fill="#000000" stroke="#000000" transform="translate(0 305.23384000000004) translate(251.56603465 52.5452) scale(1.39) translate(-325.62687 38.52)"></path>
-                  <path id="path47124" style="font-style:normal;font-weight:700;font-size:72px;line-height:1;font-family:'Brandmark1 Bold';font-variant-ligatures:normal;text-align:center;text-anchor:middle" d="m 398.16687,-25.416 c -1.07999,-2.448 -2.51999,-4.608 -4.392,-6.552 -1.944,-1.872 -4.10399,-3.312 -6.552,-4.392 -2.52,-1.08 -5.18399,-1.584 -7.99199,-1.584 -2.73601,0 -5.47201,0.504 -7.99201,1.584 -2.44799,1.08 -4.608,2.52 -6.552,4.392 -1.872,1.872 -3.312,4.104 -4.392,6.552 -1.008,2.52 -1.584,5.184 -1.584,7.992 v 30.6 l 10.8,3.6 V 0.648 c 0.57601,0.288 1.152,0.576 1.728,0.792 2.52,1.08 5.256,1.656 7.99201,1.656 2.736,0 5.47199,-0.576 7.99199,-1.656 2.44801,-1.008 4.608,-2.448 6.552,-4.392 1.87201,-1.872 3.31201,-4.032 4.392,-6.48 1.08,-2.52 1.584,-5.256 1.584,-7.992 0,-2.808 -0.504,-5.472 -1.584,-7.992 z m -18.93599,17.712 c -5.32801,0 -9.72001,-4.392 -9.72001,-9.72 0,-5.328 4.392,-9.72 9.72001,-9.72 5.32799,0 9.71999,4.392 9.71999,9.72 0,5.328 -4.392,9.72 -9.71999,9.72 z" stroke-width="0px" stroke-linejoin="miter" stroke-miterlimit="2" fill="#000000" stroke="#000000" transform="translate(0 305.23384000000004) translate(297.55279465 53.34584) scale(1.39) translate(-358.71087 37.944)"></path>
-                  <path id="path47126" style="font-style:normal;font-weight:700;font-size:72px;line-height:1;font-family:'Brandmark1 Bold';font-variant-ligatures:normal;text-align:center;text-anchor:middle" d="m 421.51512,3.024 c 2.736,0 5.472,-0.576 7.992,-1.584 2.448,-1.08 4.68,-2.52 6.552,-4.392 1.872,-1.944 3.312,-4.104 4.392,-6.552 1.08,-2.52 1.584,-5.256 1.584,-7.992 0,-2.808 -0.504,-5.472 -1.584,-7.992 -1.08,-2.448 -2.52,-4.68 -4.392,-6.552 -1.944,-1.872 -4.104,-3.312 -6.552,-4.392 -2.52,-1.08 -5.256,-1.584 -7.992,-1.584 -2.73599,0 -5.472,0.504 -7.992,1.584 -2.44799,1.08 -4.608,2.52 -6.552,4.392 -1.87199,1.944 -3.31199,4.104 -4.392,6.552 -1.008,2.52 -1.584,5.184 -1.584,7.992 0,2.736 0.576,5.472 1.584,7.992 1.08001,2.448 2.52001,4.608 4.392,6.552 1.944,1.872 4.10401,3.312 6.552,4.392 2.52,1.008 5.25601,1.584 7.992,1.584 z m 0,-30.24 c 5.328,0 9.72,4.392 9.72,9.72 0,5.328 -4.392,9.72 -9.72,9.72 -5.328,0 -9.72,-4.392 -9.72,-9.72 0,-5.328 4.392,-9.72 9.72,-9.72 z" stroke-width="0px" stroke-linejoin="miter" stroke-miterlimit="2" fill="#000000" stroke="#000000" transform="translate(0 305.23384000000004) translate(356.32790214999994 53.245760000000004) scale(1.39) translate(-400.99512 38.016)"></path>
-                  <path id="path47128" style="font-style:normal;font-weight:700;font-size:72px;line-height:1;font-family:'Brandmark1 Bold';font-variant-ligatures:normal;text-align:center;text-anchor:middle" d="m 468.94513,-27.504 v -10.08 h -11.44801 v -12.888 l -10.79999,3.6 v 27.936 c 0,3.024 0.57599,5.904 1.72799,8.64 1.08001,2.664 2.73601,5.04 4.752,7.056 2.016,2.088 4.392,3.672 7.056,4.824 2.73601,1.152 5.68801,1.728 8.71201,1.728 v -10.8 c -6.33601,0 -11.44801,-5.112 -11.44801,-11.448 v -8.568 z" stroke-width="0px" stroke-linejoin="miter" stroke-miterlimit="2" fill="#000000" stroke="#000000" transform="translate(0 305.23384000000004) translate(419.85369604999994 35.93192) scale(1.39) translate(-446.69713 50.472)"></path>
-                  <path id="path47130" style="font-style:normal;font-weight:700;font-size:72px;line-height:1;font-family:'Brandmark1 Bold';font-variant-ligatures:normal;text-align:center;text-anchor:middle" d="m 512.74475,-17.496 c 0,-2.808 -0.576,-5.472 -1.656,-7.992 -1.008,-2.448 -2.52,-4.68 -4.392,-6.552 -1.872,-1.872 -4.032,-3.384 -6.48,-4.392 -2.592,-1.08 -5.256,-1.584 -7.992,-1.584 -2.808,0 -5.472,0.504 -7.992,1.584 -0.648,0.288 -1.224,0.504 -1.728,0.864 v -20.52 l -10.8,3.6 v 34.992 c 0,2.736 0.504,5.472 1.584,7.992 1.008,2.448 2.52,4.608 4.392,6.48 1.872,1.944 4.104,3.384 6.552,4.392 2.52,1.08 5.184,1.656 7.992,1.656 2.736,0 5.4,-0.576 7.992,-1.656 2.376,-1.008 4.608,-2.52 6.48,-4.392 1.872,-1.872 3.384,-4.032 4.392,-6.48 1.08,-2.592 1.656,-5.256 1.656,-7.992 z m -10.8,0 c 0,5.328 -4.392,9.72 -9.72,9.72 -5.4,0 -9.72,-4.392 -9.72,-9.72 0,-5.4 4.32,-9.72 9.72,-9.72 5.328,0 9.72,4.32 9.72,9.72 z" stroke-width="0px" stroke-linejoin="miter" stroke-miterlimit="2" fill="#000000" stroke="#000000" transform="translate(0 305.23384000000004) translate(454.61428784999987 28.12568000000001) scale(1.39) translate(-471.70475 56.088)"></path>
-                  <path id="path47132" style="font-style:normal;font-weight:700;font-size:72px;line-height:1;font-family:'Brandmark1 Bold';font-variant-ligatures:normal;text-align:center;text-anchor:middle" d="m 534.437,3.024 c 2.736,0 5.472,-0.576 7.992,-1.584 2.448,-1.08 4.68,-2.52 6.552,-4.392 1.872,-1.944 3.312,-4.104 4.392,-6.552 1.08,-2.52 1.584,-5.256 1.584,-7.992 0,-2.808 -0.504,-5.472 -1.584,-7.992 -1.08,-2.448 -2.52,-4.68 -4.392,-6.552 -1.944,-1.872 -4.104,-3.312 -6.552,-4.392 -2.52,-1.08 -5.256,-1.584 -7.992,-1.584 -2.736,0 -5.472,0.504 -7.992,1.584 -2.448,1.08 -4.608,2.52 -6.552,4.392 -1.872,1.944 -3.312,4.104 -4.392,6.552 -1.008,2.52 -1.584,5.184 -1.584,7.992 0,2.736 0.576,5.472 1.584,7.992 1.08,2.448 2.52,4.608 4.392,6.552 1.944,1.872 4.104,3.312 6.552,4.392 2.52,1.008 5.256,1.584 7.992,1.584 z m 0,-30.24 c 5.328,0 9.72,4.392 9.72,9.72 0,5.328 -4.392,9.72 -9.72,9.72 -5.328,0 -9.72,-4.392 -9.72,-9.72 0,-5.328 4.392,-9.72 9.72,-9.72 z" stroke-width="0px" stroke-linejoin="miter" stroke-miterlimit="2" fill="#000000" stroke="#000000" transform="translate(0 305.23384000000004) translate(513.2893153499999 53.245760000000004) scale(1.39) translate(-513.917 38.016)"></path>
-                  <path id="path47134" style="font-style:normal;font-weight:700;font-size:72px;line-height:1;font-family:'Brandmark1 Bold';font-variant-ligatures:normal;text-align:center;text-anchor:middle" d="m 577.187,3.024 c 2.736,0 5.472,-0.576 7.992,-1.584 2.448,-1.08 4.68,-2.52 6.552,-4.392 1.872,-1.944 3.312,-4.104 4.392,-6.552 1.08,-2.52 1.584,-5.256 1.584,-7.992 0,-2.808 -0.504,-5.472 -1.584,-7.992 -1.08,-2.448 -2.52,-4.68 -4.392,-6.552 -1.944,-1.872 -4.104,-3.312 -6.552,-4.392 -2.52,-1.08 -5.256,-1.584 -7.992,-1.584 -2.736,0 -5.472,0.504 -7.992,1.584 -2.448,1.08 -4.608,2.52 -6.552,4.392 -1.872,1.944 -3.312,4.104 -4.392,6.552 -1.008,2.52 -1.584,5.184 -1.584,7.992 0,2.736 0.576,5.472 1.584,7.992 1.08,2.448 2.52,4.608 4.392,6.552 1.944,1.872 4.104,3.312 6.552,4.392 2.52,1.008 5.256,1.584 7.992,1.584 z m 0,-30.24 c 5.328,0 9.72,4.392 9.72,9.72 0,5.328 -4.392,9.72 -9.72,9.72 -5.328,0 -9.72,-4.392 -9.72,-9.72 0,-5.328 4.392,-9.72 9.72,-9.72 z" stroke-width="0px" stroke-linejoin="miter" stroke-miterlimit="2" fill="#000000" stroke="#000000" transform="translate(0 305.23384000000004) translate(572.71181535 53.245760000000004) scale(1.39) translate(-556.667 38.016)"></path>
-                  <path id="path47136" style="font-style:normal;font-weight:700;font-size:72px;line-height:1;font-family:'Brandmark1 Bold';font-variant-ligatures:normal;text-align:center;text-anchor:middle" d="m 626.273,2.52 h 12.744 l -14.76,-22.824 15.624,-17.28 H 626.057 L 612.449,-22.32 V -55.512 H 601.577 V 2.52 h 10.872 V -7.704 l 4.32,-4.68 z" stroke-width="0px" stroke-linejoin="miter" stroke-miterlimit="2" fill="#000000" stroke="#000000" transform="translate(0 305.23384000000004) translate(635.1367153500001 28.92632000000001) scale(1.39) translate(-601.577 55.512)"></path>
-                  <path id="path47138" style="font-style:normal;font-weight:700;font-size:72px;line-height:1;font-family:'Brandmark1 Bold';font-variant-ligatures:normal;text-align:center;text-anchor:middle" d="m 654.21912,2.808 c 2.808,0 5.544,-0.576 8.13601,-1.728 2.52,-1.08 4.75199,-2.664 6.62399,-4.608 l -7.632,-7.2 c -1.87199,2.016 -4.392,3.096 -7.128,3.096 -3.52799,0 -6.62399,-1.872 -8.352,-4.608 h 28.58401 v -5.256 c 0,-5.4 -2.08801,-10.512 -5.904,-14.328 -3.816,-3.816 -8.92801,-5.976 -14.32801,-5.976 -5.472,0 -10.51199,2.16 -14.4,5.976 -3.816,3.816 -5.904,8.928 -5.904,14.328 0,5.4 2.088,10.512 5.904,14.328 3.88801,3.816 8.928,5.976 14.4,5.976 z m -8.352,-25.488 c 1.72801,-2.808 4.82401,-4.68 8.352,-4.68 3.456,0 6.552,1.872 8.35201,4.68 z" stroke-width="0px" stroke-linejoin="miter" stroke-miterlimit="2" fill="#000000" stroke="#000000" transform="translate(0 305.23384000000004) translate(680.0867021500002 53.54600000000001) scale(1.39) translate(-633.91512 37.8)"></path>
-                  <path id="path47140" style="font-style:normal;font-weight:700;font-size:72px;line-height:1;font-family:'Brandmark1 Bold';font-variant-ligatures:normal;text-align:center;text-anchor:middle" d="m 687.752,2.52 v 0 -17.712 c 0,-6.912 5.616,-12.6 12.6,-12.6 v -10.8 c -3.168,0 -6.264,0.648 -9.144,1.872 -2.736,1.152 -5.256,2.88 -7.416,5.04 -2.16,2.088 -3.816,4.608 -5.04,7.416 -1.224,2.88 -1.8,5.904 -1.8,9.072 V 2.52 Z" stroke-width="0px" stroke-linejoin="miter" stroke-miterlimit="2" fill="#000000" stroke="#000000" transform="translate(0 305.23384000000004) translate(739.9079653500002 52.44512000000001) scale(1.39) translate(-676.952 38.592)"></path>
-                </g>
-                <image xlink:href="" id="icon" style="display: none;" x="0" y="0" fill="#FFFFFF"></image>
-              </g>
+          <svg width="522" height="102" viewBox="0 0 522 102" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="logo-group">
+            <g id="logo-center">
+            <g id="title">
+            <path id="path47122" d="M23.9848 82.4251C34.0929 82.4251 42.2994 74.2186 42.2994 64.1105C42.2994 54.0024 34.0929 45.7959 23.9848 45.7959H19.7814C18.2802 45.7959 17.1793 44.5949 17.1793 43.1938C17.1793 41.6926 18.2802 40.4916 19.7814 40.4916H40.6981V24.7791H19.7814C9.67331 24.7791 1.46676 33.0857 1.46676 43.1938C1.46676 53.3019 9.67331 61.5084 19.7814 61.5084H23.9848C25.3859 61.5084 26.5868 62.7094 26.5868 64.1105C26.5868 65.6117 25.3859 66.7126 23.9848 66.7126H0.566025V82.4251H23.9848Z" fill="white"/>
+            <path id="path47124" d="M101.397 42.9936C99.8954 39.5909 97.8938 36.5885 95.2917 33.8863C92.5896 31.2842 89.5872 29.2826 86.1845 27.7814C82.6817 26.2802 78.9787 25.5797 75.0756 25.5797C71.2725 25.5797 67.4695 26.2802 63.9667 27.7814C60.564 29.2826 57.5616 31.2842 54.8594 33.8863C52.2573 36.4884 50.2557 39.5909 48.7545 42.9936C47.3534 46.4964 46.5528 50.1994 46.5528 54.1025V96.6365L61.5648 101.64V79.2226C62.3654 79.6229 63.1661 80.0232 63.9667 80.3234C67.4695 81.8246 71.2725 82.6253 75.0756 82.6253C78.8786 82.6253 82.6817 81.8246 86.1845 80.3234C89.5872 78.9223 92.5896 76.9207 95.2917 74.2186C97.8938 71.6165 99.8954 68.6141 101.397 65.2114C102.898 61.7086 103.598 57.9055 103.598 54.1025C103.598 50.1994 102.898 46.4964 101.397 42.9936ZM75.0756 67.6133C67.6696 67.6133 61.5648 61.5084 61.5648 54.1025C61.5648 46.6966 67.6696 40.5917 75.0756 40.5917C82.4815 40.5917 88.5864 46.6966 88.5864 54.1025C88.5864 61.5084 82.4815 67.6133 75.0756 67.6133Z" fill="white"/>
+            <path id="path47126" d="M133.851 82.5252C137.654 82.5252 141.457 81.7246 144.96 80.3235C148.362 78.8223 151.465 76.8207 154.067 74.2186C156.669 71.5164 158.671 68.514 160.172 65.1113C161.673 61.6085 162.374 57.8055 162.374 54.0024C162.374 50.0993 161.673 46.3963 160.172 42.8935C158.671 39.4908 156.669 36.3883 154.067 33.7863C151.365 31.1842 148.362 29.1826 144.96 27.6814C141.457 26.1802 137.654 25.4796 133.851 25.4796C130.048 25.4796 126.245 26.1802 122.742 27.6814C119.339 29.1826 116.337 31.1842 113.635 33.7863C111.033 36.4884 109.031 39.4908 107.53 42.8935C106.129 46.3963 105.328 50.0993 105.328 54.0024C105.328 57.8055 106.129 61.6085 107.53 65.1113C109.031 68.514 111.033 71.5164 113.635 74.2186C116.337 76.8207 119.339 78.8223 122.742 80.3235C126.245 81.7246 130.048 82.5252 133.851 82.5252ZM133.851 40.4916C141.257 40.4916 147.361 46.5965 147.361 54.0024C147.361 61.4083 141.257 67.5132 133.851 67.5132C126.445 67.5132 120.34 61.4083 120.34 54.0024C120.34 46.5965 126.445 40.4916 133.851 40.4916Z" fill="white"/>
+            <path id="path47128" d="M199.778 40.0913V26.0801H183.866V8.16577L168.854 13.1698V52.0008C168.854 56.2042 169.654 60.2074 171.256 64.0104C172.757 67.7134 175.059 71.016 177.861 73.8182C180.663 76.7206 183.966 78.9223 187.669 80.5236C191.472 82.1249 195.575 82.9255 199.778 82.9255V67.9135C190.971 67.9135 183.866 60.8078 183.866 52.0008V40.0913H199.778Z" fill="white"/>
+            <path id="path47130" d="M260.66 54.0024C260.66 50.0993 259.859 46.3963 258.358 42.8935C256.957 39.4908 254.855 36.3883 252.253 33.7862C249.651 31.1842 246.649 29.0825 243.246 27.6814C239.643 26.1802 235.94 25.4796 232.137 25.4796C228.234 25.4796 224.531 26.1802 221.028 27.6814C220.128 28.0817 219.327 28.3819 218.626 28.8823V0.359528L203.614 5.36353V54.0024C203.614 57.8055 204.315 61.6085 205.816 65.1113C207.217 68.514 209.319 71.5164 211.921 74.1185C214.523 76.8207 217.626 78.8222 221.028 80.2234C224.531 81.7246 228.234 82.5252 232.137 82.5252C235.94 82.5252 239.643 81.7246 243.246 80.2234C246.549 78.8222 249.651 76.7206 252.253 74.1185C254.855 71.5164 256.957 68.514 258.358 65.1113C259.859 61.5084 260.66 57.8055 260.66 54.0024ZM245.648 54.0024C245.648 61.4083 239.543 67.5132 232.137 67.5132C224.631 67.5132 218.626 61.4083 218.626 54.0024C218.626 46.4964 224.631 40.4916 232.137 40.4916C239.543 40.4916 245.648 46.4964 245.648 54.0024Z" fill="white"/>
+            <path id="path47132" d="M290.812 82.5252C294.615 82.5252 298.418 81.7246 301.921 80.3235C305.324 78.8223 308.426 76.8207 311.028 74.2186C313.63 71.5164 315.632 68.514 317.133 65.1113C318.634 61.6085 319.335 57.8055 319.335 54.0024C319.335 50.0993 318.634 46.3963 317.133 42.8935C315.632 39.4908 313.63 36.3883 311.028 33.7863C308.326 31.1842 305.324 29.1826 301.921 27.6814C298.418 26.1802 294.615 25.4796 290.812 25.4796C287.009 25.4796 283.206 26.1802 279.703 27.6814C276.301 29.1826 273.298 31.1842 270.596 33.7863C267.994 36.4884 265.992 39.4908 264.491 42.8935C263.09 46.3963 262.289 50.0993 262.289 54.0024C262.289 57.8055 263.09 61.6085 264.491 65.1113C265.992 68.514 267.994 71.5164 270.596 74.2186C273.298 76.8207 276.301 78.8223 279.703 80.3235C283.206 81.7246 287.009 82.5252 290.812 82.5252ZM290.812 40.4916C298.218 40.4916 304.323 46.5965 304.323 54.0024C304.323 61.4083 298.218 67.5132 290.812 67.5132C283.406 67.5132 277.301 61.4083 277.301 54.0024C277.301 46.5965 283.406 40.4916 290.812 40.4916Z" fill="white"/>
+            <path id="path47134" d="M350.235 82.5252C354.038 82.5252 357.841 81.7246 361.343 80.3235C364.746 78.8223 367.849 76.8207 370.451 74.2186C373.053 71.5164 375.054 68.514 376.556 65.1113C378.057 61.6085 378.757 57.8055 378.757 54.0024C378.757 50.0993 378.057 46.3963 376.556 42.8935C375.054 39.4908 373.053 36.3883 370.451 33.7863C367.749 31.1842 364.746 29.1826 361.343 27.6814C357.841 26.1802 354.038 25.4796 350.235 25.4796C346.432 25.4796 342.629 26.1802 339.126 27.6814C335.723 29.1826 332.721 31.1842 330.018 33.7863C327.416 36.4884 325.415 39.4908 323.914 42.8935C322.512 46.3963 321.712 50.0993 321.712 54.0024C321.712 57.8055 322.512 61.6085 323.914 65.1113C325.415 68.514 327.416 71.5164 330.018 74.2186C332.721 76.8207 335.723 78.8223 339.126 80.3235C342.629 81.7246 346.432 82.5252 350.235 82.5252ZM350.235 40.4916C357.641 40.4916 363.745 46.5965 363.745 54.0024C363.745 61.4083 357.641 67.5132 350.235 67.5132C342.829 67.5132 336.724 61.4083 336.724 54.0024C336.724 46.5965 342.829 40.4916 350.235 40.4916Z" fill="white"/>
+            <path id="path47136" d="M418.464 81.8246H436.178L415.662 50.0993L437.379 26.0801H418.164L399.249 47.297V1.16016H384.137V81.8246H399.249V67.6133L405.254 61.1081L418.464 81.8246Z" fill="white"/>
+            <path id="path47138" d="M457.309 82.225C461.212 82.225 465.015 81.4243 468.618 79.823C472.121 78.3218 475.224 76.1201 477.826 73.4179L467.217 63.4099C464.615 66.2122 461.112 67.7134 457.309 67.7134C452.405 67.7134 448.102 65.1113 445.7 61.3082H485.432V54.0024C485.432 46.4964 482.529 39.3907 477.225 34.0865C471.921 28.7822 464.815 25.7798 457.309 25.7798C449.703 25.7798 442.698 28.7822 437.293 34.0865C431.989 39.3907 429.087 46.4964 429.087 54.0024C429.087 61.5084 431.989 68.6141 437.293 73.9183C442.698 79.2226 449.703 82.225 457.309 82.225ZM445.7 46.7966C448.102 42.8935 452.405 40.2914 457.309 40.2914C462.113 40.2914 466.417 42.8935 468.919 46.7966H445.7Z" fill="white"/>
+            <path id="path47140" d="M503.92 81.8246V57.205C503.92 47.5973 511.726 39.691 521.434 39.691V24.679C517.03 24.679 512.727 25.5797 508.724 27.281C504.921 28.8823 501.418 31.2842 498.416 34.2866C495.413 37.189 493.111 40.6918 491.41 44.5949C489.709 48.5981 488.908 52.8014 488.908 57.205V81.8246H503.92Z" fill="white"/>
+            </g>
+            </g>
             </g>
           </svg>
         </div>
